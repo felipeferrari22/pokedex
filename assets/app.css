@@ -1,0 +1,242 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    zoom: 90%;
+}
+
+body, input, button {
+    font-family: 'DotGothic16', sans-serif; 
+}
+
+div {
+    position: absolute;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1em;
+    border-radius: 4px;
+    font-size: 1.3em;
+    background-color: white;
+    background-image: url('pokeball.png');
+    background-size: contain;
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 70px;
+}
+
+button {
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#shiny {
+    top: 66%;
+    left: 14%;
+    font-size: 2em;
+    padding: 6px 8px;
+    width: 4em;
+    background-color: #FFD700;
+}
+
+#shiny:active {
+    background-color: #cbb21f;
+    transform: 1s;
+}
+
+#next, #previous {
+    top: 67.4%;
+    font-size: 1.7em;
+    padding: 0px 3px;
+    width: 5em;
+    background-color: #084035;
+}
+
+#next {
+    left: 76%;
+}
+
+#next:active, #previous:active {
+    background-color: rgb(43, 46, 33);
+    transform: 1s;
+}
+
+#previous {
+    left: 57%;
+}
+
+#sprite {
+    position: fixed;
+    width: 7%;
+    left: 86vh;
+    top: 38vh;
+}
+
+#stats {
+    position: relative;
+    left: 1em;
+    color: white;
+    font-size: 2em;
+    width: 93%;
+    height: 150%;
+}
+
+#menu {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#numberLabel {
+    position: absolute;
+    top: -8%;
+    left: 0.9em;
+}
+
+#number {
+    position: absolute;
+    top: 14%;
+    left: 4.5em;
+}
+
+#pokemonNameLabel {
+    position: absolute;
+    top: 28%;
+    left: 0.9em;
+}
+
+#pokemonName {
+    position: absolute;
+    top: 50%;
+    left: 3.5em;
+    text-transform: uppercase;
+}
+
+#typeLabel {
+    position: absolute;
+    top: -8%;
+    left: 13em;
+}
+
+#type {
+    position: absolute;
+    left: 15.7em;
+    top: 16%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+#generationLabel {
+    position: absolute;
+    top: 28%;
+    left: 13em;
+}
+
+#generation {
+    position: absolute;
+    left: 18.5em;
+    top: 50%;
+}
+
+@media (max-width: 940px){
+    #stats {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    #pokedex {
+        width: 100%;
+    }
+
+    #shiny {
+        font-size: 1.15em;
+        top: 67%;
+    }
+
+    #previous, #next {
+        font-size: 0.8em;
+        padding: 4px 0px;
+        top: 69%;
+    }
+
+    #previous {
+        left: 60%;
+    }
+
+    #sprite {
+        left: 8.5vh;
+        top: 12.5vh;
+    }
+
+    #menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #stats {
+        font-size: 1.2em;
+    }
+
+    input {
+        width: 80%;
+        font-size: 0.8em;
+        margin: 1em auto;
+        display: block;
+        padding: 12px 20px 12px 50px;
+        background-position: 2px 3px;
+    }
+}
+
+@media (max-width: 390px) {
+    #stats {
+        font-size: 1em;
+    }
+
+    input {
+        font-size: 0.7em;
+    }
+
+    #shiny {
+        font-size: 1em;
+    }
+
+    #previous, #next {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 375px) {
+    #stats {
+        font-size: 1em;
+    }
+
+    input {
+        font-size: 0.7em;
+    }
+
+    #shiny {
+        font-size: 1em;
+    }
+
+    #previous, #next {
+        font-size: 0.7em;
+    }
+
+    #sprite {
+        left: 10.5vh;
+        top: 15vh;
+    }
+}
